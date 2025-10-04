@@ -1,24 +1,30 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
+import { SessionProvider, useSession } from './ctx';
+import { SplashScreenController } from './splash';
 
-import { useColorScheme } from '@/hooks/use-color-scheme';
+export default function Root() {
+  return (
+    <SessionProvider>
+      <SplashScreenController />
+      <RootNavigator />
+    </SessionProvider>
+  );
+}
 
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
-
-export default function RootLayout() {
-  const colorScheme = useColorScheme();
+function RootNavigator() {
+  const { session } = useSession();
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
+    <Stack screenOptions={{ headerStyle: { backgroundColor: '#1a1a1a' }, headerTintColor: '#fff' }}>
+      <Stack.Protected guard={!session}>
+        <Stack.Screen name="index" options={{ headerShown: false }} />
+      </Stack.Protected>
+
+      <Stack.Protected guard={!!session}>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+        <Stack.Screen name="Quiz" options={{ title: 'Quiz' }} />
+        <Stack.Screen name="ResultsScreen" options={{ title: 'Results' }} />
+      </Stack.Protected>
+    </Stack>
   );
 }
