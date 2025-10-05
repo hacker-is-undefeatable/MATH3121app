@@ -1,5 +1,5 @@
+import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import React from 'react';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import DashboardScreen from './screens/DashboardScreen';
 import LoginScreen from './screens/LoginScreen';
@@ -31,7 +31,9 @@ function AppNavigator() {
 export default function App() {
   return (
     <AuthProvider>
+      <NavigationContainer>
         <AppNavigator />
+      </NavigationContainer>
     </AuthProvider>
   );
 }
