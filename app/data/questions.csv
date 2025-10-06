@@ -1,26 +1,26 @@
 quiz_id,text,option1,option2,option3,option4,correct_answer,created_at
-1,"What is the capital of France?","Paris","London","Berlin","Madrid",0,2025-10-05 07:13:00+08
-1,"What is 2 + 2?","3","4","5","6",1,2025-10-05 07:13:00+08
-1,"Who wrote Romeo and Juliet?","Shakespeare","Dickens","Tolkien","Hemingway",0,2025-10-05 07:13:00+08
-1,"What is the largest planet?","Earth","Mars","Jupiter","Saturn",2,2025-10-05 07:13:00+08
-1,"What color is the sky?","Blue","Green","Red","Yellow",0,2025-10-05 07:13:00+08
-2,"What is H2O?","Water","Oxygen","Carbon","Helium",0,2025-10-05 07:13:00+08
-2,"What is the speed of light?","300,000 km/s","150,000 km/s","500,000 km/s","100,000 km/s",0,2025-10-05 07:13:00+08
-2,"What is photosynthesis?","Plant food making","Animal breathing","Rock formation","Water cycle",0,2025-10-05 07:13:00+08
-2,"What is DNA?","Genetic material","Protein","Carbohydrate","Lipid",0,2025-10-05 07:13:00+08
-2,"What causes gravity?","Mass","Speed","Light","Sound",0,2025-10-05 07:13:00+08
-3,"When was WWII?","1939-1945","1914-1918","1945-1950","1800-1815",0,2025-10-05 07:13:00+08
-3,"Who was the first US President?","Washington","Lincoln","Jefferson","Adams",0,2025-10-05 07:13:00+08
-3,"What is the Renaissance?","Cultural rebirth","War period","Industrial revolution","Space age",0,2025-10-05 07:13:00+08
-3,"Who discovered America?","Columbus","Magellan","Vespucci","Cook",0,2025-10-05 07:13:00+08
-3,"What was the Roman Empire?","Ancient superpower","Modern country","Mythical land","Small tribe",0,2025-10-05 07:13:00+08
-4,"What is 5 * 6?","30","25","35","40",0,2025-10-05 07:13:00+08
-4,"What is pi approximately?","3.14","2.71","1.61","4.20",0,2025-10-05 07:13:00+08
-4,"What is a triangle with equal sides?","Equilateral","Isosceles","Scalene","Right",0,2025-10-05 07:13:00+08
-4,"What is 100 / 4?","25","20","30","50",0,2025-10-05 07:13:00+08
-4,"What is the square root of 16?","4","2","8","16",0,2025-10-05 07:13:00+08
-5,"What is the largest continent?","Asia","Africa","Europe","America",0,2025-10-05 07:13:00+08
-5,"What is the longest river?","Nile","Amazon","Yangtze","Mississippi",0,2025-10-05 07:13:00+08
-5,"What is the capital of Japan?","Tokyo","Seoul","Beijing","Bangkok",0,2025-10-05 07:13:00+08
-5,"What is Mount Everest?","Highest mountain","Deepest ocean","Largest desert","Longest wall",0,2025-10-05 07:13:00+08
-5,"What ocean is the largest?","Pacific","Atlantic","Indian","Arctic",0,2025-10-05 07:13:00+08
+1,"What is a group in abstract algebra?","A set with an associative operation, identity, and inverses","A set with only an operation","A collection of numbers","A type of ring",0,2025-10-05 07:13:00+08
+1,"What is the order of the identity element in any group?","1","0","Infinite","Undefined",1,2025-10-05 07:13:00+08
+1,"Who is considered the father of abstract algebra?","Évariste Galois","Isaac Newton","Carl Friedrich Gauss","David Hilbert",0,2025-10-05 07:13:00+08
+1,"In group theory, what is a normal subgroup?","A subgroup invariant under conjugation","A subgroup with prime order","The center of the group","A cyclic subgroup",2,2025-10-05 07:13:00+08
+1,"What does Lagrange's theorem state?","The order of a subgroup divides the order of the group","Subgroups are always cyclic","Groups are abelian","Homomorphisms preserve order",0,2025-10-05 07:13:00+08
+2,"What is a ring in abstract algebra?","A set with addition and multiplication, satisfying certain axioms","A group with no multiplication","A field without division","A module over itself",0,2025-10-05 07:13:00+08
+2,"What is an ideal in a ring?","A subset closed under addition and multiplication by ring elements","A subgroup of the additive group","The kernel of a homomorphism","A principal generator",0,2025-10-05 07:13:00+08
+2,"What is a commutative ring?","A ring where multiplication is commutative","A ring with no zero divisors","A ring that is also a field","A ring with unity",0,2025-10-05 07:13:00+08
+2,"What is a field?","A commutative ring with unity where every nonzero element has an inverse","A ring without addition","A group under multiplication only","An integral domain without division",0,2025-10-05 07:13:00+08
+2,"What causes a ring to be an integral domain?","No zero divisors","Having unity","Being commutative","Having finite order",0,2025-10-05 07:13:00+08
+3,"What is a homomorphism between groups?","A function preserving the group operation","A bijection between sets","An injection only","A surjection only",0,2025-10-05 07:13:00+08
+3,"What is the kernel of a group homomorphism?","The set of elements mapping to the identity","The image of the homomorphism","The cokernel","The center",0,2025-10-05 07:13:00+08
+3,"What is an isomorphism?","A bijective homomorphism","A one-to-one function","A onto function","A constant map",0,2025-10-05 07:13:00+08
+3,"Who developed much of group theory?","Joseph-Louis Lagrange","Niels Henrik Abel","Sophus Lie","Emmy Noether",0,2025-10-05 07:13:00+08
+3,"What is the center of a group?","The set of elements that commute with every element","The trivial subgroup","The largest normal subgroup","The derived subgroup",0,2025-10-05 07:13:00+08
+4,"What is the degree of a polynomial in a ring?","The highest power with nonzero coefficient","The number of terms","The constant term","The leading coefficient",0,2025-10-05 07:13:00+08
+4,"What is the characteristic of a field?","The smallest positive integer n such that n*1=0, or 0 if none","Always prime","The order of the field","The dimension",0,2025-10-05 07:13:00+08
+4,"What is a vector space?","A module over a field","A group under addition","A ring with scalars","A set with inner product",0,2025-10-05 07:13:00+08
+4,"What is a basis in a vector space?","A linearly independent spanning set","A dependent set","An orthogonal set","A single vector",0,2025-10-05 07:13:00+08
+4,"What is the dimension of a vector space?","The cardinality of a basis","The number of vectors","The rank of the space","Infinite always",0,2025-10-05 07:13:00+08
+5,"What is a module in abstract algebra?","An abelian group with scalar multiplication from a ring","A vector space over integers","A subgroup of a ring","A field extension",0,2025-10-05 07:13:00+08
+5,"What is a field extension?","A field containing another field as a subfield","A ring homomorphism","A group extension","A vector subspace",0,2025-10-05 07:13:00+08
+5,"What is Galois theory about?","The solvability of polynomials by radicals","Group actions on sets","Ring ideals","Module structures",0,2025-10-05 07:13:00+08
+5,"What is a cyclic group?","A group generated by a single element","An abelian group","A finite group","A simple group",0,2025-10-05 07:13:00+08
+5,"What is an abelian group?","A group where the operation is commutative","A non-commutative group","A group with subgroups","A trivial group",0,2025-10-05 07:13:00+08
