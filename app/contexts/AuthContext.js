@@ -1,9 +1,9 @@
-// contexts/AuthContext.js
 import { createClient } from '@supabase/supabase-js';
 import { createContext, useContext, useEffect, useState } from 'react';
+import supabaseConfig from '../../supabaseConfig.json';
 
-const supabaseUrl = 'https://xujxinigtwitgdqogqlj.supabase.co'; // Replace with your Supabase URL
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh1anhpbmlndHdpdGdkcW9ncWxqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk1MTY1NDIsImV4cCI6MjA3NTA5MjU0Mn0.mZIFDY5PYSHVB-tPL21haihoCFUbySJ6AidE2-1upvk'; // Replace with your Supabase anon key
+const supabaseUrl = supabaseConfig.supabaseUrl;
+const supabaseKey = supabaseConfig.supabaseKey;
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 const AuthContext = createContext();
