@@ -4,7 +4,7 @@ Welcome to **MathMaster**, a mobile quiz application built with [Expo](https://e
 
 ## Features
 
-- **User Authentication**: Secure registration and login with email and password, integrated with Supabase.
+- **User Authentication**: Secure registration and login with email and password, integrated with Supabase. *Note: After clicking the email confirmation link, you may encounter an error message. This can be safely ignored as the email account is still confirmed. For best results, use a laptop to click the confirmation link.*
 - **Interactive Quizzes**: Take quizzes with multiple-choice questions and track progress.
 - **Score History**: View past quiz scores with timestamps.
 - **Dark Theme**: A cohesive, starry-night UI with animated stars for an engaging user experience.
