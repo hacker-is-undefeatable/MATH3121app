@@ -1,6 +1,6 @@
-# QuizMaster
+# MathMaster
 
-Welcome to **QuizMaster**, a mobile quiz application built with [Expo](https://expo.dev) and React Native. This app allows users to register, log in, take quizzes, and view their score history, all within a visually appealing dark, starry-night themed interface. Powered by Supabase for authentication and data storage, QuizMaster provides a seamless cross-platform experience on Android, iOS, and web.
+Welcome to **MathMaster**, a mobile quiz application built with [Expo](https://expo.dev) and React Native. This app allows users to register, log in, take quizzes, and view their score history, all within a visually appealing dark, starry-night themed interface. Powered by Supabase for authentication and data storage, MathMaster provides a seamless cross-platform experience on Android, iOS, and web.
 
 ## Features
 
@@ -26,7 +26,6 @@ Welcome to **QuizMaster**, a mobile quiz application built with [Expo](https://e
 
    ```bash
    git clone <repository-url>
-   cd quizmaster
    ```
 
 2. **Install Dependencies**
