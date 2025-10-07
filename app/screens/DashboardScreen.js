@@ -94,62 +94,62 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#F0F2F5', // Soft pastel background
+    backgroundColor: '#1f1f1fff', // Dark navy for night sky (from RegisterScreen)
   },
   header: {
     fontSize: 24,
     fontWeight: '600',
-    color: '#333',
+    color: '#E0E0E0', // Light gray for contrast (from RegisterScreen)
     marginBottom: 20,
     textAlign: 'center',
   },
   subHeader: {
     fontSize: 18,
     fontWeight: '500',
-    color: '#555',
+    color: '#E0E0E0', // Light gray for contrast (from RegisterScreen)
     marginVertical: 10,
   },
   list: {
     marginBottom: 20,
   },
   quizButton: {
-    backgroundColor: '#E6E8EB', // Soft base color for neumorphic effect
+    backgroundColor: '#1a1a1aff', 
     borderRadius: 12,
     padding: 15,
     marginVertical: 5,
     shadowColor: '#000',
     shadowOffset: { width: 3, height: 3 },
-    shadowOpacity: 0.1,
+    shadowOpacity: 0.1, 
     shadowRadius: 5,
-    elevation: 5, // Android shadow
+    elevation: 5, 
     borderWidth: 1,
-    borderColor: '#D1D4D8', // Subtle border for depth
+    borderColor: '#4A5859',
   },
   quizButtonText: {
     fontSize: 16,
-    color: '#333',
+    color: '#E0E0E0',
     textAlign: 'center',
     fontWeight: '500',
   },
   scoreCard: {
-    backgroundColor: '#E6E8EB',
+    backgroundColor: '#1e1e1eff',
     borderRadius: 12,
     padding: 15,
     marginVertical: 5,
     shadowColor: '#000',
-    shadowOffset: { width: -2, height: -2 },
-    shadowOpacity: 0.1,
+    shadowOffset: { width: 3, height: 3 },
+    shadowOpacity: 0,
     shadowRadius: 5,
     elevation: 3,
     borderWidth: 1,
-    borderColor: '#D1D4D8',
+    borderColor: '#4A5859'
   },
   scoreText: {
     fontSize: 14,
-    color: '#444',
+    color: '#E0E0E0',
   },
   logoutButton: {
-    backgroundColor: '#D8DADE',
+    backgroundColor: '#1a1a1aff',
     borderRadius: 12,
     padding: 15,
     marginTop: 20,
@@ -160,16 +160,16 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     elevation: 5,
     borderWidth: 1,
-    borderColor: '#C5C8CC',
+    borderColor: '#4A5859',
   },
   logoutButtonText: {
     fontSize: 16,
-    color: '#333',
+    color: '#E0E0E0',
     fontWeight: '500',
   },
   text: {
     fontSize: 16,
-    color: '#333',
+    color: '#E0E0E0',
     textAlign: 'center',
   },
 });

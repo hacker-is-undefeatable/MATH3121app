@@ -1,6 +1,6 @@
 import { useNavigation } from '@react-navigation/native';
-import { useState } from 'react';
-import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { useEffect, useState } from 'react';
+import { Animated, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { useAuth } from '../contexts/AuthContext';
 
 export default function LoginScreen() {
@@ -10,10 +10,53 @@ export default function LoginScreen() {
   const { signIn } = useAuth();
   const navigation = useNavigation();
 
+  const starAnim1 = useState(new Animated.Value(0))[0];
+  const starAnim2 = useState(new Animated.Value(0))[0];
+  const starAnim3 = useState(new Animated.Value(0))[0];
+  const starAnim4 = useState(new Animated.Value(0))[0];
+  const starAnim5 = useState(new Animated.Value(0))[0];
+  const [starPositions, setStarPositions] = useState([]);
+
+  useEffect(() => {
+    const positions = Array.from({ length: 5 }, () => ({
+      top: `${Math.random() * 90}%`,
+      left: `${Math.random() * 90}%`,
+    }));
+    setStarPositions(positions);
+
+    const createBlinkAnimation = (anim) => {
+      return Animated.loop(
+        Animated.sequence([
+          Animated.timing(anim, {
+            toValue: 1,
+            duration: 1000 + Math.random() * 2000,
+            useNativeDriver: true,
+          }),
+          Animated.timing(anim, {
+            toValue: 0,
+            duration: 1000 + Math.random() * 2000,
+            useNativeDriver: true,
+          }),
+        ])
+      );
+    };
+
+    const animations = [
+      createBlinkAnimation(starAnim1),
+      createBlinkAnimation(starAnim2),
+      createBlinkAnimation(starAnim3),
+      createBlinkAnimation(starAnim4),
+      createBlinkAnimation(starAnim5),
+    ];
+
+    animations.forEach((anim) => anim.start());
+
+    return () => animations.forEach((anim) => anim.stop());
+  }, [starAnim1, starAnim2, starAnim3, starAnim4, starAnim5]);
+
   const handleLogin = async () => {
     try {
       await signIn(email, password);
-      // Navigation handled by AppNavigator
     } catch (err) {
       setError(err.message);
     }
@@ -21,6 +64,18 @@ export default function LoginScreen() {
 
   return (
     <View style={styles.container}>
+      {/* Star elements with animated opacity and random positions */}
+      {starPositions.map((position, index) => (
+        <Animated.View
+          key={index}
+          style={[
+            styles.star,
+            { top: position.top, left: position.left },
+            { opacity: [starAnim1, starAnim2, starAnim3, starAnim4, starAnim5][index] },
+          ]}
+        />
+      ))}
+
       <Text style={styles.header}>Login</Text>
       <TextInput
         style={styles.input}
@@ -56,38 +111,49 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     padding: 20,
-    backgroundColor: '#F0F2F5', // Soft pastel background
+    backgroundColor: '#1f1f1fff',
+  },
+  star: {
+    position: 'absolute',
+    width: 4,
+    height: 4,
+    backgroundColor: '#FFFFFF',
+    borderRadius: 2,
+    shadowColor: '#FFFFFF',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.8,
+    shadowRadius: 3,
   },
   header: {
     fontSize: 24,
     fontWeight: '600',
-    color: '#333',
+    color: '#E0E0E0',
     marginBottom: 30,
     textAlign: 'center',
   },
   input: {
-    backgroundColor: '#E6E8EB', // Soft base for neumorphic effect
+    backgroundColor: '#1e1e1eff',
     borderRadius: 12,
     padding: 15,
     marginVertical: 10,
     fontSize: 16,
-    color: '#333',
+    color: '#E0E0E0',
     borderWidth: 1,
-    borderColor: '#D1D4D8', // Subtle border for depth
+    borderColor: '#4A5859',
     shadowColor: '#000',
     shadowOffset: { width: 3, height: 3 },
-    shadowOpacity: 0.1,
+    shadowOpacity: 0,
     shadowRadius: 5,
-    elevation: 3, // Android shadow
+    elevation: 3,
   },
   error: {
-    color: '#E57373', // Soft red for errors
+    color: '#E57373',
     fontSize: 14,
     textAlign: 'center',
     marginBottom: 10,
   },
   loginButton: {
-    backgroundColor: '#E6E8EB',
+    backgroundColor: '#1a1a1aff',
     borderRadius: 12,
     padding: 15,
     marginVertical: 10,
@@ -98,10 +164,10 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     elevation: 5,
     borderWidth: 1,
-    borderColor: '#D1D4D8',
+    borderColor: '#4A5859',
   },
   registerButton: {
-    backgroundColor: '#D8DADE', // Slightly different shade for distinction
+    backgroundColor: '#1a1a1aff',
     borderRadius: 12,
     padding: 15,
     marginVertical: 10,
@@ -112,11 +178,11 @@ const styles = StyleSheet.create({
     shadowRadius: 5,
     elevation: 5,
     borderWidth: 1,
-    borderColor: '#C5C8CC',
+    borderColor: '#4A5859',
   },
   buttonText: {
     fontSize: 16,
-    color: '#333',
+    color: '#E0E0E0',
     fontWeight: '500',
   },
 });

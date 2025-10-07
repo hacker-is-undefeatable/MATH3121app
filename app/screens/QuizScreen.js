@@ -163,53 +163,53 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     justifyContent: 'center',
-    backgroundColor: '#F0F2F5', // Soft pastel background
+    backgroundColor: '#1f1f1fff',
   },
   header: {
     fontSize: 24,
     fontWeight: '600',
-    color: '#333',
+    color: '#E0E0E0',
     marginBottom: 20,
     textAlign: 'center',
   },
   questionText: {
     fontSize: 18,
     fontWeight: '500',
-    color: '#333',
+    color: '#E0E0E0',
     marginBottom: 20,
     textAlign: 'center',
   },
   option: {
-    backgroundColor: '#E6E8EB', // Soft base for neumorphic effect
+    backgroundColor: '#1e1e1eff',
     borderRadius: 12,
     padding: 15,
     marginVertical: 5,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: Platform.OS === 'android' ? 2 : 4, // Lower on Android
+    shadowOffset: { width: 3, height: 3 },
+    shadowOpacity: 0,
+    shadowRadius: 5,
+    elevation: 3,
     borderWidth: 1,
-    borderColor: '#D1D4D8', // Subtle border
+    borderColor: '#4A5859',
   },
   selectedOption: {
-    backgroundColor: '#4A90E2', // Opaque blue for selected
+    backgroundColor: '#4A5859',
   },
   pressedStyle: {
-    opacity: 0.7, // Press feedback for all platforms
+    opacity: 0.7,
   },
   androidFix: {
-    padding: 16, // Extra padding for Android
-    overflow: 'visible', // Avoid clipping
+    padding: 16,
+    overflow: 'visible',
   },
   optionText: {
     fontSize: 16,
-    color: '#333',
+    color: '#E0E0E0',
     fontWeight: '500',
     textAlign: 'center',
   },
   warningText: {
-    color: '#E57373', // Soft red for warnings
+    color: '#E57373',
     fontSize: 14,
     textAlign: 'center',
     marginBottom: 10,
@@ -220,7 +220,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   navButton: {
-    backgroundColor: '#E6E8EB',
+    backgroundColor: '#1a1a1aff',
     borderRadius: 12,
     padding: 15,
     flex: 1,
@@ -230,29 +230,30 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 3, height: 3 },
     shadowOpacity: 0.1,
     shadowRadius: 5,
-    elevation: Platform.OS === 'android' ? 3 : 5,
+    elevation: 5,
     borderWidth: 1,
-    borderColor: '#D1D4D8',
+    borderColor: '#4A5859',
   },
   disabledButton: {
-    backgroundColor: '#D8DADE', // Dimmed for disabled state
+    backgroundColor: '#1a1a1aff',
     opacity: 0.5,
   },
   buttonText: {
     fontSize: 16,
-    color: '#333',
+    color: '#E0E0E0',
     fontWeight: '500',
+    height: 20
   },
   scoreText: {
     fontSize: 18,
     fontWeight: '500',
-    color: '#333',
+    color: '#E0E0E0',
     marginVertical: 20,
     textAlign: 'center',
   },
   text: {
     fontSize: 16,
-    color: '#333',
+    color: '#E0E0E0',
     textAlign: 'center',
   },
 });
