@@ -12,7 +12,7 @@ function AppNavigator() {
   const { user } = useAuth();
 
   return (
-    <Stack.Navigator initialRouteName="Login">
+    <Stack.Navigator initialRouteName="Login" screenOptions={{ headerShown: false }}>
       {!user ? (
         <>
           <Stack.Screen name="Login" component={LoginScreen} />
