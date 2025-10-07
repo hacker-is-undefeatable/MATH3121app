@@ -36,8 +36,7 @@ Welcome to **MathMaster**, a mobile quiz application built with [Expo](https://e
 
 3. **Configure Supabase**
 
-   - Create a Supabase project and obtain your API keys.
-   - Update the Supabase configuration in `contexts/AuthContext.js` with your Supabase URL and anon key.
+   - Email chwman@connect.ust.hk to obtain the Supabase key and URL. You will then be given a file named supabaseConfig.json. Please place it in the root directory.
 
 4. **Start the App**
 
@@ -66,14 +65,6 @@ This project uses [file-based routing](https://docs.expo.dev/router/introduction
 - **Styling**: The app uses a consistent dark theme with `#1f1f1f` background, `#E0E0E0` text, and `#4A5859` borders.
 - **Database**: Ensure your Supabase tables (`quizzes`, `questions`, `scores`) are set up with the correct schema.
 
-To reset the project to a blank state:
-
-```bash
-npm run reset-project
-```
-
-This moves the starter code to `app-example/` and creates a fresh `app/` directory.
-
 ## Learn More
 
 Explore these resources to deepen your understanding of Expo and React Native:
@@ -81,7 +72,6 @@ Explore these resources to deepen your understanding of Expo and React Native:
 - [Expo Documentation](https://docs.expo.dev): Covers fundamentals and advanced topics.
 - [Expo Tutorial](https://docs.expo.dev/tutorial/introduction): A step-by-step guide to building a universal app.
 - [React Native Documentation](https://reactnative.dev): Learn about native components and APIs.
-- [Supabase Documentation](https://supabase.com/docs): Guides for authentication and database setup.
 
 ## Contributing
 
@@ -94,14 +84,3 @@ We welcome contributions! To contribute:
 5. Open a pull request.
 
 Please ensure your code follows the project's style guidelines and includes tests where applicable.
-
-## Community
-
-Join the Expo community to connect with other developers:
-
-- [Expo on GitHub](https://github.com/expo/expo): Contribute to the open-source platform.
-- [Expo Discord](https://chat.expo.dev): Ask questions and share ideas.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
