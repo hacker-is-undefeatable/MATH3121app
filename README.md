@@ -1,50 +1,108 @@
-# Welcome to your Expo app 👋
+# QuizMaster
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Welcome to **QuizMaster**, a mobile quiz application built with [Expo](https://expo.dev) and React Native. This app allows users to register, log in, take quizzes, and view their score history, all within a visually appealing dark, starry-night themed interface. Powered by Supabase for authentication and data storage, QuizMaster provides a seamless cross-platform experience on Android, iOS, and web.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **User Authentication**: Secure registration and login with email and password, integrated with Supabase.
+- **Interactive Quizzes**: Take quizzes with multiple-choice questions and track progress.
+- **Score History**: View past quiz scores with timestamps.
+- **Dark Theme**: A cohesive, starry-night UI with animated stars for an engaging user experience.
+- **Cross-Platform**: Runs on Android, iOS, and web using Expo.
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org) (v16 or higher)
+- [npm](https://www.npmjs.com) or [yarn](https://yarnpkg.com)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/) (`npm install -g expo-cli`)
+- [Expo Go](https://expo.dev/go) app for mobile testing (optional)
+- A [Supabase](https://supabase.com) account for authentication and database
+
+### Installation
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone <repository-url>
+   cd quizmaster
+   ```
+
+2. **Install Dependencies**
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. **Configure Supabase**
+
+   - Create a Supabase project and obtain your API keys.
+   - Update the Supabase configuration in `contexts/AuthContext.js` with your Supabase URL and anon key.
+
+4. **Start the App**
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+   In the output, you'll see options to:
+   - Open in a [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+   - Run on an [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+   - Run on an [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+   - Test in [Expo Go](https://expo.dev/go) for quick mobile previews
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+This project uses [file-based routing](https://docs.expo.dev/router/introduction) with Expo Router. Key files and directories include:
 
-## Get a fresh project
+- **app/**: Contains the main app screens (`RegisterScreen.js`, `LoginScreen.js`, `QuizScreen.js`, `DashboardScreen.js`).
+- **contexts/AuthContext.js**: Manages user authentication with Supabase.
+- **components/**: Reusable UI components (if any).
+- **assets/**: Images, fonts, and other static resources.
 
-When you're ready, run:
+## Development
+
+- **Editing**: Modify files in the `app/` directory to update screens or add new routes.
+- **Styling**: The app uses a consistent dark theme with `#1f1f1f` background, `#E0E0E0` text, and `#4A5859` borders.
+- **Database**: Ensure your Supabase tables (`quizzes`, `questions`, `scores`) are set up with the correct schema.
+
+To reset the project to a blank state:
 
 ```bash
 npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+This moves the starter code to `app-example/` and creates a fresh `app/` directory.
 
-## Learn more
+## Learn More
 
-To learn more about developing your project with Expo, look at the following resources:
+Explore these resources to deepen your understanding of Expo and React Native:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- [Expo Documentation](https://docs.expo.dev): Covers fundamentals and advanced topics.
+- [Expo Tutorial](https://docs.expo.dev/tutorial/introduction): A step-by-step guide to building a universal app.
+- [React Native Documentation](https://reactnative.dev): Learn about native components and APIs.
+- [Supabase Documentation](https://supabase.com/docs): Guides for authentication and database setup.
 
-## Join the community
+## Contributing
 
-Join our community of developers creating universal apps.
+We welcome contributions! To contribute:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -m "Add your feature"`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a pull request.
+
+Please ensure your code follows the project's style guidelines and includes tests where applicable.
+
+## Community
+
+Join the Expo community to connect with other developers:
+
+- [Expo on GitHub](https://github.com/expo/expo): Contribute to the open-source platform.
+- [Expo Discord](https://chat.expo.dev): Ask questions and share ideas.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
