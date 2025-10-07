@@ -56,8 +56,6 @@ This project uses [file-based routing](https://docs.expo.dev/router/introduction
 
 - **app/**: Contains the main app screens (`RegisterScreen.js`, `LoginScreen.js`, `QuizScreen.js`, `DashboardScreen.js`).
 - **contexts/AuthContext.js**: Manages user authentication with Supabase.
-- **components/**: Reusable UI components (if any).
-- **assets/**: Images, fonts, and other static resources.
 
 ## Development
 
