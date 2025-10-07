@@ -78,7 +78,7 @@ export default function RegisterScreen() {
   };
 
   const handleBack = () => {
-    navigation.navigate('Login'); // Or use navigation.goBack() if it's a stack navigator
+    navigation.navigate('Login');
   };
 
   return (
@@ -187,7 +187,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   registerButton: {
-    backgroundColor: '#1a1a1aff', // Matching dark theme
+    backgroundColor: '#1a1a1aff',
     borderRadius: 12,
     padding: 15,
     marginVertical: 10,
@@ -202,7 +202,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 16,
-    color: '#E0E0E0', // Light text for dark theme
+    color: '#E0E0E0',
     fontWeight: '500',
   },
 });

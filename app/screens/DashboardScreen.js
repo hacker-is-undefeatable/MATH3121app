@@ -94,19 +94,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#1f1f1fff', // Dark navy for night sky (from RegisterScreen)
+    backgroundColor: '#1f1f1fff',
   },
   header: {
     fontSize: 24,
     fontWeight: '600',
-    color: '#E0E0E0', // Light gray for contrast (from RegisterScreen)
+    color: '#E0E0E0',
     marginBottom: 20,
     textAlign: 'center',
   },
   subHeader: {
     fontSize: 18,
     fontWeight: '500',
-    color: '#E0E0E0', // Light gray for contrast (from RegisterScreen)
+    color: '#E0E0E0', 
     marginVertical: 10,
   },
   list: {
