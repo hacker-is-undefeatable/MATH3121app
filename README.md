@@ -26,7 +26,6 @@ Welcome to **MathMaster**, a mobile quiz application built with [Expo](https://e
 
    ```bash
    git clone <repository-url>
-   cd MathMaster
    ```
 
 2. **Install Dependencies**
