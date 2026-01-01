@@ -111,124 +111,232 @@ export default function HistoryScreen() {
   };
 
   // Review screen
-  if (selectedQuiz && selectedQuizAnswers.length > 0) {
-    const answerData = selectedQuizAnswers[currentQuestion];
-    
-    if (!answerData || !answerData.questions) {
-      return (
-        <View style={styles.container}>
-          <Text style={styles.text}>Question not found</Text>
-          <Pressable
-            style={styles.navButton}
-            onPress={() => setSelectedQuiz(null)}
-          >
-            <Text style={styles.buttonText}>Back to History</Text>
-          </Pressable>
-        </View>
-      );
-    }
-
-    const question = answerData.questions;
-    const userAnswerIndex = answerData.selected_option;
-    const correctAnswerIndex = parseInt(question.correct_option);
-    const isCorrect = answerData.is_correct;
-    const options = [question.option_1, question.option_2, question.option_3, question.option_4];
-
+  // Review screen
+if (selectedQuiz && selectedQuizAnswers.length > 0) {
+  const answerData = selectedQuizAnswers[currentQuestion];
+  
+  if (!answerData || !answerData.questions) {
     return (
       <View style={styles.container}>
-        <ScrollView 
-          style={styles.scrollContent}
-          contentContainerStyle={styles.scrollContentContainer}
-          showsVerticalScrollIndicator={false}
+        <Text style={styles.text}>Question not found</Text>
+        <Pressable
+          style={styles.navButton}
+          onPress={() => setSelectedQuiz(null)}
         >
-          <View style={styles.progressContainer}>
-            <Text style={styles.progressText}>
-              Question {currentQuestion + 1} of {selectedQuiz.total_questions}
-            </Text>
-            <View style={styles.progressBar}>
-              <View style={[styles.progressFill, { 
-                width: `${((currentQuestion + 1) / selectedQuiz.total_questions) * 100}%` 
-              }]} />
-            </View>
-          </View>
-
-          {question.img_link && (
-            <View style={styles.imageContainer}>
-              <Image
-                source={{ uri: question.img_link }}
-                style={styles.questionImage}
-                resizeMode="contain"
-              />
-            </View>
-          )}
-
-          <View style={styles.questionCard}>
-            <MathText 
-              text={question.question}
-              style={styles.questionText}
-            />
-          </View>
-
-          <View style={styles.optionsContainer}>
-            {options.map((option, index) => {
-              const isUserAnswer = index === userAnswerIndex;
-              const isCorrectAnswer = index === correctAnswerIndex;
-              let optionStyle = styles.option;
-              let optionTextStyle = styles.optionText;
-
-              if (isCorrectAnswer) {
-                optionStyle = [styles.option, styles.correctOption];
-                optionTextStyle = [styles.optionText, styles.correctOptionText];
-              } else if (isUserAnswer && !isCorrect) {
-                optionStyle = [styles.option, styles.wrongOption];
-                optionTextStyle = [styles.optionText, styles.wrongOptionText];
-              }
-
-              return (
-                <View
-                  key={index}
-                  style={optionStyle}
-                >
-                  <MathText
-                    text={option}
-                    style={optionTextStyle}
-                  />
-                  {isCorrectAnswer && <Text style={styles.correctLabel}>✓ Correct</Text>}
-                  {isUserAnswer && !isCorrect && <Text style={styles.wrongLabel}>✗ Your Answer</Text>}
-                </View>
-              );
-            })}
-          </View>
-        </ScrollView>
-
-        <SafeAreaView style={styles.buttonContainer}>
-          <Pressable
-            style={({ pressed }) => [
-              styles.navButton,
-              pressed && styles.pressedStyle,
-              currentQuestion === 0 && styles.disabledButton,
-            ]}
-            onPress={handlePrevious}
-            disabled={currentQuestion === 0}
-          >
-            <Text style={styles.buttonText}>Previous</Text>
-          </Pressable>
-          <Pressable
-            style={({ pressed }) => [
-              styles.navButton,
-              pressed && styles.pressedStyle,
-              currentQuestion === selectedQuiz.total_questions - 1 && styles.disabledButton,
-            ]}
-            onPress={currentQuestion === selectedQuiz.total_questions - 1 ? () => setSelectedQuiz(null) : handleNext}
-          >
-            <Text style={styles.buttonText}>
-              {currentQuestion === selectedQuiz.total_questions - 1 ? 'Back to History' : 'Next'}
-            </Text>
-          </Pressable>
-        </SafeAreaView>
+          <Text style={styles.buttonText}>Back to History</Text>
+        </Pressable>
       </View>
     );
   }
+
+  const question = answerData.questions;
+  
+  // IMPORTANT: Keep values as they are in the database (1-indexed: 1,2,3,4)
+  // Only convert to 0-indexed when accessing array indices
+  const correctAnswerValue = question.correct_option; // Should be 1, 2, 3, or 4
+  const userAnswerValue = answerData.selected_option; // Should be 1, 2, 3, 4, or null
+  
+  // Convert to 0-indexed for array access
+  const correctAnswerIndex = correctAnswerValue ? parseInt(correctAnswerValue) - 1 : 0;
+  const userAnswerIndex = userAnswerValue ? parseInt(userAnswerValue) - 1 : -1;
+  
+  // Use the is_correct flag from the database directly
+  const isCorrect = answerData.is_correct === true;
+  
+  // Create options array
+  const options = [
+    question.option_1 || 'Option 1',
+    question.option_2 || 'Option 2', 
+    question.option_3 || 'Option 3',
+    question.option_4 || 'Option 4'
+  ];
+
+  // Ensure we have valid option text for display
+  const safeOptions = options.map(option => option || 'No option text');
+
+  // Validate indices are within bounds
+  const validCorrectIndex = correctAnswerIndex >= 0 && correctAnswerIndex <= 3 ? correctAnswerIndex : 0;
+  const validUserIndex = userAnswerIndex >= 0 && userAnswerIndex <= 3 ? userAnswerIndex : -1;
+
+  return (
+    <View style={styles.container}>
+      <ScrollView 
+        style={styles.scrollContent}
+        contentContainerStyle={styles.scrollContentContainer}
+        showsVerticalScrollIndicator={false}
+      >
+        <View style={styles.progressContainer}>
+          <Text style={styles.progressText}>
+            Question {currentQuestion + 1} of {selectedQuiz.total_questions}
+          </Text>
+          <View style={styles.progressBar}>
+            <View style={[styles.progressFill, { 
+              width: `${((currentQuestion + 1) / selectedQuiz.total_questions) * 100}%` 
+            }]} />
+          </View>
+        </View>
+
+        {question.img_link && (
+          <View style={styles.imageContainer}>
+            <Image
+              source={{ uri: question.img_link }}
+              style={styles.questionImage}
+              resizeMode="contain"
+            />
+          </View>
+        )}
+
+        <View style={styles.questionCard}>
+          <MathText 
+            text={question.question || 'No question text available'}
+            style={styles.questionText}
+          />
+        </View>
+
+        <View style={styles.optionsContainer}>
+          {safeOptions.map((option, index) => {
+            const isUserAnswer = index === validUserIndex;
+            const isCorrectAnswer = index === validCorrectIndex;
+            
+            // Determine if this option needs special styling
+            const showCorrect = isCorrectAnswer;
+            const showWrong = isUserAnswer && !isCorrect;
+            const showUserCorrect = isUserAnswer && isCorrect;
+
+            return (
+              <View
+                key={index}
+                style={[
+                  styles.option,
+                  showCorrect && styles.correctOption,
+                  showWrong && styles.wrongOption,
+                  showUserCorrect && styles.correctOption
+                ]}
+              >
+                <MathText
+                  text={option}
+                  style={[
+                    styles.optionText,
+                    showCorrect && styles.correctOptionText,
+                    showWrong && styles.wrongOptionText,
+                    showUserCorrect && styles.correctOptionText
+                  ]}
+                />
+                
+                {/* Correct Answer Indicator (always show for correct answer) */}
+                {showCorrect && (
+                  <View style={styles.indicatorContainer}>
+                    <View style={[styles.indicatorBox, styles.correctBox]}>
+                      <Text style={styles.indicatorText}>
+                        {showUserCorrect ? '✓ Your Answer' : '✓ Correct Answer'}
+                      </Text>
+                    </View>
+                  </View>
+                )}
+                
+                {/* Wrong Answer Indicator - Only show if user selected wrong answer */}
+                {showWrong && (
+                  <View style={styles.indicatorContainer}>
+                    <View style={[styles.indicatorBox, styles.wrongBox]}>
+                      <Text style={styles.indicatorText}>✗ Your Answer</Text>
+                    </View>
+                  </View>
+                )}
+              </View>
+            );
+          })}
+        </View>
+        
+        {/* Result Summary Card */}
+        <View style={[
+          styles.resultCard,
+          isCorrect ? styles.resultCardCorrect : styles.resultCardWrong
+        ]}>
+          <View style={styles.resultHeader}>
+            <View style={[styles.resultIcon, isCorrect ? styles.resultIconCorrect : styles.resultIconWrong]}>
+              <Text style={styles.resultIconText}>
+                {isCorrect ? '✓' : '✗'}
+              </Text>
+            </View>
+            <Text style={styles.resultTitle}>
+              {isCorrect ? 'Correct!' : 'Incorrect'}
+            </Text>
+          </View>
+          <Text style={styles.resultDescription}>
+            {isCorrect 
+              ? 'You answered this question correctly.' 
+              : validUserIndex === -1 
+                ? 'You did not answer this question.'
+                : `You selected "${safeOptions[validUserIndex]}". The correct answer is "${safeOptions[validCorrectIndex]}".`}
+          </Text>
+        </View>
+        
+        {/* Debug info - remove in production */}
+        {__DEV__ && (
+          <View style={styles.debugContainer}>
+            <Text style={styles.debugText}>
+              Debug: DB correct_option: {correctAnswerValue} (1-indexed)
+            </Text>
+            <Text style={styles.debugText}>
+              Array index: {validCorrectIndex} (0-indexed)
+            </Text>
+            <Text style={styles.debugText}>
+              DB selected_option: {userAnswerValue} (1-indexed)
+            </Text>
+            <Text style={styles.debugText}>
+              Array index: {validUserIndex} (0-indexed)
+            </Text>
+            <Text style={styles.debugText}>
+              Is correct in DB: {answerData.is_correct?.toString()}
+            </Text>
+          </View>
+        )}
+      </ScrollView>
+
+      <SafeAreaView style={styles.buttonContainer}>
+        <View style={styles.navigationButtonRow}>
+          {currentQuestion > 0 ? (
+            <Pressable
+              style={({ pressed }) => [
+                styles.navButton,
+                pressed && styles.pressedStyle,
+              ]}
+              onPress={handlePrevious}
+            >
+              <Text style={styles.buttonText}>Previous</Text>
+            </Pressable>
+          ) : (
+            <View style={[styles.navButton, styles.invisibleButton]} />
+          )}
+          
+          {currentQuestion < selectedQuiz.total_questions - 1 ? (
+            <Pressable
+              style={({ pressed }) => [
+                styles.navButton,
+                pressed && styles.pressedStyle,
+              ]}
+              onPress={handleNext}
+            >
+              <Text style={styles.buttonText}>Next</Text>
+            </Pressable>
+          ) : (
+            <View style={[styles.navButton, styles.invisibleButton]} />
+          )}
+        </View>
+        
+        <Pressable
+          style={({ pressed }) => [
+            styles.backButton,
+            pressed && styles.pressedStyle,
+          ]}
+          onPress={() => setSelectedQuiz(null)}
+        >
+          <Text style={styles.buttonText}>Back to History</Text>
+        </Pressable>
+      </SafeAreaView>
+    </View>
+  );
+}
 
   return (
     <View style={styles.container}>
@@ -408,6 +516,7 @@ const styles = StyleSheet.create({
     borderColor: '#4A5859',
     minHeight: 70,
     justifyContent: 'center',
+    position: 'relative',
   },
   correctOption: {
     backgroundColor: '#2E8B57',
@@ -431,28 +540,85 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontWeight: '600',
   },
-  correctLabel: {
-    color: '#FFFFFF',
-    fontSize: 12,
-    marginTop: 5,
-    textAlign: 'center',
+  indicatorContainer: {
+    position: 'absolute',
+    right: 10,
+    top: 10,
+  },
+  indicatorBox: {
+    borderRadius: 4,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+  },
+  correctBox: {
+    backgroundColor: '#FFFFFF',
+  },
+  wrongBox: {
+    backgroundColor: '#FFFFFF',
+  },
+  indicatorText: {
+    fontSize: 10,
     fontWeight: '600',
   },
-  wrongLabel: {
-    color: '#FFFFFF',
-    fontSize: 12,
-    marginTop: 5,
-    textAlign: 'center',
+  resultCard: {
+    borderRadius: 12,
+    padding: 16,
+    marginTop: 10,
+    marginBottom: 10,
+  },
+  resultCardCorrect: {
+    backgroundColor: '#2E8B57',
+    borderColor: '#2E8B57',
+  },
+  resultCardWrong: {
+    backgroundColor: '#E57373',
+    borderColor: '#E57373',
+  },
+  resultHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 8,
+  },
+  resultIcon: {
+    width: 24,
+    height: 24,
+    borderRadius: 12,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: 10,
+  },
+  resultIconCorrect: {
+    backgroundColor: '#FFFFFF',
+  },
+  resultIconWrong: {
+    backgroundColor: '#FFFFFF',
+  },
+  resultIconText: {
+    fontSize: 14,
+    fontWeight: 'bold',
+  },
+  resultTitle: {
+    fontSize: 18,
     fontWeight: '600',
+    color: '#FFFFFF',
+  },
+  resultDescription: {
+    fontSize: 14,
+    color: '#FFFFFF',
+    lineHeight: 20,
   },
   buttonContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: 'column',
     paddingHorizontal: 20,
     paddingVertical: 15,
     backgroundColor: '#1f1f1fff',
     borderTopWidth: 1,
     borderTopColor: '#4A5859',
+  },
+  navigationButtonRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 10,
   },
   navButton: {
     backgroundColor: '#1a1a1aff',
@@ -463,6 +629,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderWidth: 1,
     borderColor: '#4A5859',
+  },
+  invisibleButton: {
+    opacity: 0,
+  },
+  backButton: {
+    backgroundColor: '#1a1a1aff',
+    borderRadius: 12,
+    padding: 15,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#4A5859',
+    alignSelf: 'center',
+    width: '60%',
   },
   disabledButton: {
     backgroundColor: '#1a1a1aff',
@@ -481,5 +660,18 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     textAlign: 'center',
     marginBottom: 20,
+  },
+  debugContainer: {
+    backgroundColor: '#2a2a2a',
+    padding: 10,
+    borderRadius: 8,
+    marginTop: 10,
+    borderWidth: 1,
+    borderColor: '#4A5859',
+  },
+  debugText: {
+    color: '#B0B0B0',
+    fontSize: 12,
+    fontFamily: 'monospace',
   },
 });
