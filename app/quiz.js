@@ -253,6 +253,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#1f1f1fff',
+    borderTopWidth: 50,
+    borderTopColor: '#1f1f1fff',
   },
   scrollContent: {
     flex: 1,
