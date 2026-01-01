@@ -115,20 +115,22 @@ export default function QuizScreen() {
   if (finished) {
     return (
       <SafeAreaView style={styles.container}>
-        <Text style={styles.header}>Quiz Finished!</Text>
-        <Text style={styles.scoreText}>
-          Your Score: {score}/{actualQuestions}
-        </Text>
-        <Text style={styles.topicText}>Topic: {topic}</Text>
-        <Pressable
-          style={({ pressed }) => [
-            styles.navButton,
-            pressed && styles.pressedStyle,
-          ]}
-          onPress={() => router.replace('/(tabs)')}
-        >
-          <Text style={styles.buttonText}>Back to Home</Text>
-        </Pressable>
+        <View style={styles.finishedContainer}>
+          <Text style={styles.header}>Quiz Finished!</Text>
+          <Text style={styles.scoreText}>
+            Your Score: {score}/{actualQuestions}
+          </Text>
+          <Text style={styles.topicText}>Topic: {topic}</Text>
+          <Pressable
+            style={({ pressed }) => [
+              styles.finishedButton,
+              pressed && styles.pressedStyle,
+            ]}
+            onPress={() => router.replace('/(tabs)')}
+          >
+            <Text style={styles.buttonText}>Back to Home</Text>
+          </Pressable>
+        </View>
       </SafeAreaView>
     );
   }
@@ -407,5 +409,20 @@ const styles = StyleSheet.create({
     color: '#FFFFFF', // WHITE
     textAlign: 'center',
     marginBottom: 20,
+  },
+  finishedContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+  },
+  finishedButton: {
+    backgroundColor: '#1a1a1aff',
+    borderRadius: 12,
+    paddingVertical: 12,
+    paddingHorizontal: 40,
+    borderWidth: 1,
+    borderColor: '#4A5859',
+    marginTop: 20,
   },
 });
