@@ -1,6 +1,7 @@
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useState } from 'react';
 import {
+  Image,
   Platform,
   Pressable,
   ScrollView,
@@ -66,15 +67,42 @@ export default function QuizScreen() {
         return;
       }
       
-      const { error } = await supabase
+      // Save quiz attempt as a single entry with overall score
+      const { data: scoreData, error: scoreError } = await supabase
         .from('scores')
-        .insert([{ 
+        .insert([{
           user_id: user.id,
-          topic: topic,
           score: finalScore,
-          total_questions: actualQuestions
-        }]);
-      if (error) console.error('Error saving score:', error);
+          total_questions: quizQuestions.length,
+          topic: topic
+        }])
+        .select();
+      
+      if (scoreError) {
+        console.error('Error saving score:', scoreError);
+        return;
+      }
+
+      const scoreId = scoreData[0].id;
+
+      // Save individual answers to the user_answers table
+      const answerRecords = quizQuestions.map((question, idx) => {
+        const selectedOptionIndex = selectedAnswers[idx];
+        const correctOptionIndex = parseInt(question.correct_option);
+        
+        return {
+          score_id: scoreId,
+          question_id: question.id,
+          selected_option: selectedOptionIndex,
+          is_correct: selectedOptionIndex === correctOptionIndex
+        };
+      });
+
+      const { error: answersError } = await supabase
+        .from('user_answers')
+        .insert(answerRecords);
+      
+      if (answersError) console.error('Error saving answers:', answersError);
     } catch (error) {
       console.error('Error in finishQuiz:', error);
     }
@@ -139,6 +167,16 @@ export default function QuizScreen() {
             }]} />
           </View>
         </View>
+
+        {question.img_link && (
+          <View style={styles.imageContainer}>
+            <Image
+              source={{ uri: question.img_link }}
+              style={styles.questionImage}
+              resizeMode="contain"
+            />
+          </View>
+        )}
 
         <View style={styles.questionCard}>
           <MathText 
@@ -241,6 +279,20 @@ const styles = StyleSheet.create({
     height: '100%',
     backgroundColor: '#2E8B57',
     borderRadius: 4,
+  },
+  imageContainer: {
+    backgroundColor: '#1e1e1eff',
+    borderRadius: 12,
+    padding: 15,
+    marginBottom: 20,
+    borderWidth: 1,
+    borderColor: '#4A5859',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  questionImage: {
+    width: '100%',
+    height: 200,
   },
   questionCard: {
     backgroundColor: '#1e1e1eff',
