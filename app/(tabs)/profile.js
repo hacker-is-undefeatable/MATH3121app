@@ -128,6 +128,8 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     backgroundColor: '#1f1f1fff',
+    borderTopWidth: 50,
+    borderTopColor: '#1f1f1fff',
   },
   profileHeader: {
     alignItems: 'center',
