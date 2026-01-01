@@ -150,6 +150,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     padding: 20,
     backgroundColor: '#1f1f1fff',
+    borderTopWidth: 50,
+    borderTopColor: '#1f1f1fff',
   },
   star: {
     position: 'absolute',
