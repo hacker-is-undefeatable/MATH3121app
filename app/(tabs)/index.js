@@ -117,7 +117,7 @@ export default function HomeScreen() {
 
   return (
     <KeyboardAvoidingView 
-      style={{ flex: 1, backgroundColor: '#1f1f1fff' }}
+      style={{ flex: 1, backgroundColor: '#1f1f1fff', borderTopWidth: 50, borderTopColor: '#1f1f1fff' }}
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
       keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 80}
     >
@@ -199,6 +199,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#1f1f1fff',
+    borderTopWidth: 50,
+    borderTopColor: '#1f1f1fff',
   },
   scrollView: {
     padding: 20,
