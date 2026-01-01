@@ -43,7 +43,11 @@ export default function QuizScreen() {
       // Calculate final score when finishing
       let finalScore = 0;
       quizQuestions.forEach((q, idx) => {
-        if (selectedAnswers[idx] === parseInt(q.correct_option)) {
+        const selectedOptionIndex = selectedAnswers[idx]; // 0-indexed
+        const correctOptionValue = parseInt(q.correct_option); // 1-indexed
+        // Convert selected option to 1-indexed for comparison
+        const selectedOptionValue = selectedOptionIndex !== undefined ? selectedOptionIndex + 1 : null;
+        if (selectedOptionValue === correctOptionValue) {
           finalScore += 1;
         }
       });
@@ -87,14 +91,17 @@ export default function QuizScreen() {
 
       // Save individual answers to the user_answers table
       const answerRecords = quizQuestions.map((question, idx) => {
-        const selectedOptionIndex = selectedAnswers[idx];
-        const correctOptionIndex = parseInt(question.correct_option);
+        const selectedOptionIndex = selectedAnswers[idx]; // 0-indexed from state
+        const correctOptionValue = parseInt(question.correct_option); // 1-indexed from database
+        
+        // Convert selected option to 1-indexed to match database format
+        const selectedOptionValue = selectedOptionIndex !== undefined ? selectedOptionIndex + 1 : null;
         
         return {
           score_id: scoreId,
           question_id: question.id,
-          selected_option: selectedOptionIndex,
-          is_correct: selectedOptionIndex === correctOptionIndex
+          selected_option: selectedOptionValue, // Save as 1-indexed (1, 2, 3, or 4)
+          is_correct: selectedOptionValue === correctOptionValue // Compare 1-indexed values
         };
       });
 
