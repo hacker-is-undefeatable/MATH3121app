@@ -334,6 +334,8 @@ const styles = StyleSheet.create({
     borderColor: '#4A5859',
     minHeight: 70,
     justifyContent: 'center',
+    alignItems: 'stretch',
+    overflow: 'visible',
   },
   selectedOption: {
     backgroundColor: '#4A5859',
