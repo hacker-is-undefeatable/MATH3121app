@@ -45,6 +45,15 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
+        name="exam"
+        options={{
+          title: 'Exam',
+          tabBarIcon: ({ color, size }) => (
+            <Icon name="assignment" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="profile"
         options={{
           title: 'Profile',
