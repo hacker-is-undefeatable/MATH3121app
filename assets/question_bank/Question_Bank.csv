@@ -3,6 +3,85 @@ $\frac{\left(2 x^4\right)^3}{2 x^5}=$,3,2012,1,$3 x^2$,$3 x^7$,$4 x^7$,$4 x^{59}
 $(4 x+y)^2-(4 x-y)^2=$,4,2012,2,0,$2 y^2$,$8 x y$,$16 x y$,Simplification and factorization,,
 "If $p$ and $q$ are constants such that $x^2+p \equiv(x+2)(x+q)+10$, then $p=$",3,2012,3,-4,-2,6,10,Simplification and factorization,,
 "If $k$ is a constant such that $x^3+4 x^2+k x-12$ is divisible by $x+3$, then $k=$",2,2012,4,-25,-1,1,17,Polynomial,,
+"If $m+2 n+6=2 m-n=7$, then $n=$",2,2012,5,-4,-1,3,11,,Linear equations in two unknowns,
+"The figure shows the graph of $y=a(x+b)^2$, where $a$ and $b$ are constants. Which of the following is true?",4,2012,6,$a>0$ and $b>0$,$a>0$ and $b<0$,$a<0$ and $b>0$,$a<0$ and $b<0$,,Graph of functions,https://n7vcmwon2g.ucarecd.net/af68184d-76fa-4380-aa46-bf9efdf6046f/2012_Math_Paper_2_Q6.png
+The solution of $15+4 x<3$ or $9-2 x>1$ is,3,2012,7,$x<-3$,$x>-3$,$x<4$,$x>4$,,Inequalities and linear programming,
+"In a company, $37.5 \%$ of the employees are female. If $60 \%$ of the male employees and $80 \%$ of the female employees are married, then the percentage of married employees in the company is",4,2012,8,$32.5 \%$,$45 \%$,$55 \%$,$67.5 \%$,,Percentage and compound interest,
+"If $x$ and $y$ are non-zero numbers such that $\frac{6 x+5 y}{3 y-2 x}=7$, then $x: y=$",1,2012,9,$4: 5$,$4:13$,$5:4$,$13: 4$,,Rate and ratio,
+"It is given that $y$ partly varies directly as $x^2$ and partly varies inversely as $x$. When $x=1, y=-4$ and when $x=2, y=5$. When $x=-2, y=$",4,2012,10,-11,-5,5,11,,Variations,
+Mary performs a typing task for 7 hours. Her average typing speeds for the first 3 hours and the last 4 hours are 63 words per minute and 56 words per minute respectively. Find her average typing speed for the 7 hours.,3,2012,11,17 words per minute,35 words per minute,59 words per minute,60 words per minute,,Rate and ratio,
+"In the figure, the 1 st pattern consists of 1 dot . For any positive integer $n$, the $(n+1)$ th pattern is formed by adding $n$ dots to the $n$th pattern. Find the number of dots in the 8th pattern.",2,2012,12,22,29,36,37,,Arithmetic sequence and geometric sequence,https://n7vcmwon2g.ucarecd.net/b4c2131c-886d-4c11-be16-95587f84c937/2012_Math_Paper_2_Q12.png
+0.0322515=,4,2012,13,0.032 (correct to 3 significant figures),0.0322 (correct to 4 decimal places),0.03225 (correct to 5 significant figures),0.032252 (correct to 6 decimal places),,Measurement,
+"The length of a piece of thin string is measured as 25 m correct to the nearest m . If the string is cut into $n$ pieces such that the length of each piece is measured as 5 cm correct to the nearest cm , find the greatest possible value of $n$.",2,2012,14,445,566,567,650,,Measurement,
+"In the figure, the area of quadrilateral $A B C D$ is",1,2012,15,$144 \mathrm{~cm}^2$,$160 \mathrm{~cm}^2$,$178 \mathrm{~cm}^2$,$288 \mathrm{~cm}^2$,,"Perimeter, area and volume",https://n7vcmwon2g.ucarecd.net/02f1ff8c-033d-469f-84b0-1eb57df5a5e8/2012_Math_Paper_2_Q15.png
+"In the figure, $O A B$ and $O C D$ are sectors with centre $O$. If $\overparen{A B}=12 \pi \mathrm{~cm}, \overparen{C D}=16 \pi \mathrm{~cm}$ and $O A=30 \mathrm{~cm}$, then $A C=$",2,2012,16,$5 \mathrm{~cm}$,$10 \mathrm{~cm}$,$20 \mathrm{~cm}$,$40 \mathrm{~cm}$,,"Parallel lines, similar triangles and congruent triangles",https://n7vcmwon2g.ucarecd.net/eb3eca1e-2cf4-4995-a1ea-2c9fe6617472/2012_Math_Paper_2_Q16.png
+"In the figure, $A B C D$ is a parallelogram. $E$ and $F$ are points lying on $A B$ and $C D$ respectively. $A D$ produced and $E F$ produced meet at $G$. It is given that $D F: F C=3: 4$ and $A D: D G=1: 1$. If the area of $\triangle D F G$ is $3 \mathrm{~cm}^2$, then the area of the parallelogram $A B C D$ is",2,2012,17,$2 \mathrm{~cm}^2$,$14 \mathrm{~cm}^2$,$18 \mathrm{~cm}^2$,$21 \mathrm{~cm}^2$,,"Perimeter, area and volume",https://n7vcmwon2g.ucarecd.net/eeb1692f-e951-4143-ba17-9fcf56bbe4d6/2012_Math_Paper_2_Q17.png
+"In the figure, $D$ is a point lying on $A C$ such that $B D$ is perpendicular to $A C$. If $B C=\ell$, then $A B=$",1,2012,18,$\frac{\ell \sin \alpha}{\cos \beta}$,$\frac{\ell \sin \beta}{\cos \alpha}$,$\frac{\ell \cos \alpha}{\sin \beta}$,$\frac{\ell \cos \beta}{\sin \alpha}$,,"Sine formula, Cosine formula and Heron's formula",https://n7vcmwon2g.ucarecd.net/232aaf8d-bc5b-46f8-9276-2abe47e3c5c3/2012_Math_Paper_2_Q18.png
+$\frac{\cos 60^{\circ}}{1-\cos \left(90^{\circ}-\theta\right)}+\frac{\cos 240^{\circ}}{1-\cos \left(270^{\circ}-\theta\right)}=$,3,2012,19,$\frac{1}{\cos ^2 \theta}$,$\frac{\cos \theta}{\tan \theta}$,$\frac{\tan \theta}{\cos \theta}$,$\frac{1}{\cos \theta \tan \theta}$,,Trigonometry,
+"In the figure, $O$ is the centre of the circle $A B C D$. If $\angle B A O=28^{\circ}, \angle B C D=114^{\circ}$ and $\angle C D O=42^{\circ}$, then $\angle A B C=$",3,2012,20,$90^{\circ}$,$96^{\circ}$,$100^{\circ}$,$138^{\circ}$,,Properties of circles,https://n7vcmwon2g.ucarecd.net/0f8a3904-8380-41c2-9a44-89f5fbd2ae81/2012_Math_Paper_2_Q20.png
+"In the figure, $A B$ is a diameter of the circle $A B C D$. If $A B=12 \mathrm{~cm}$ and $C D=6 \mathrm{~cm}$, then the area of the shaded region is",4,2012,21,$(12 \pi-9) \mathrm{cm}^2$,$(12 \pi+9) \mathrm{cm}^2$,$(12 \pi-9 \sqrt{3}) \mathrm{cm}^2$,$(12 \pi+9 \sqrt{3}) \mathrm{cm}^2$,,"Perimeter, area and volume",https://n7vcmwon2g.ucarecd.net/dbef2f89-455f-401b-9fbf-f7c5d0ea3986/2012_Math_Paper_2_Q21.png
+"Which of the following statements about a regular 12 -sided polygon are true?\\
+I. Each exterior angle is $30^{\circ}$.\\
+II. Each interior angle is $150^{\circ}$.\\
+III. The number of axes of reflectional symmetry is 6.",1,2012,22,I and II only,I and III only,II and III only,"I, II and III",,Transformation,
+"The rectangular coordinates of the point $P$ are $(-3,-3 \sqrt{3})$. If $P$ is rotated anticlockwise about the origin through $90^{\circ}$, then the polar coordinates of its image are",4,2012,23,"$\left(3,150^{\circ}\right)$","$\left(3,330^{\circ}\right)$","$\left(6,150^{\circ}\right)$","$\left(6,330^{\circ}\right)$",,Transformation,
+"If $P$ is a moving point in the rectangular coordinate plane such that the distance between $P$ and the point $(20,12)$ is equal to 5, then the locus of $P$ is a",1,2012,24,circle,square,parabola,triangle,,Equation of circles,
+"In the figure, the equations of the straight lines $L_1$ and $L_2$ are $a x+y=b$ and $c x+y=d$ respectively. Which of the following are true?\\
+I. $a<0$\\
+II. $a<c$\\
+III. $b>d$\\
+IV. $a d>b c$",3,2012,25,"I, II and III only","I, II and IV only","I, III and IV only","II, III and IV only",,Equation of straight lines,https://n7vcmwon2g.ucarecd.net/fe617685-395b-45ae-9052-73a1157eb62d/2012_Math_Paper_2_Q25.png
+"In the figure, the radius of the circle and the coordinates of the centre are $r$ and $(h, k)$ respectively. Which of the following are true?\\
+I. $h+k>0$\\
+II. $r-h>0$\\
+III. $r-k>0$",1,2012,26,I and II only,I and III only,II and III only,"I, II and III",,Equation of circles,https://n7vcmwon2g.ucarecd.net/b9fe9fee-ad78-421b-9ac7-54f7adbaaf5e/2012_Math_Paper_2_Q26.png
+"$9 \star\square$ is a 3-digit number, where $\star$ and $\square$ are integers from 0 to 9 inclusive. Find the probability that the 3 -digit number is divisible by 5.",1,2012,27,$\frac{1}{5}$,$\frac{7}{33}$,$\frac{20}{99}$,$\frac{19}{100}$,,"Permutation, combinations and probability",
+"The stem-and-leaf diagram below shows the distribution of the ages of a group of members in a recreational centre.
+
+\begin{tabular}{r|lllllllll} 
+Stem (tens) & \multicolumn{8}{|l}{ Leaf (units) } \\
+\cline { 1 - 9 } 5 & 0 & 5 & 6 & 6 & 8 & & & \\
+6 & 1 & 4 & 5 & 5 & 7 & 8 & 8 & 9 \\
+7 & 3 & 4 & 4 & 6 & 7 & 9 & & \\
+8 & & & & & & & & \\
+9 & 1 & & & & & & &
+\end{tabular}
+A member is randomly selected from the group. Find the probability that the selected member is not under the age of 74.",2,2012,28,0.2,0.3,0.7,0.8,,"Permutation, combinations and probability",
+"The bar chart below shows the distribution of the numbers of rings owned by the girls in a group. Find the standard deviation of the distribution, correct to 2 decimal places.",2,2012,29,1.04,1.16,1.19,2.09,,Measure of dispersion and statistics,https://n7vcmwon2g.ucarecd.net/e69475af-34a6-437c-80f1-1c323269d65a/2012_Math_Paper_2_Q29.png
+"Consider the following data:
+
+\begin{tabular}{lllllllllll}
+19 & 10 & 12 & 12 & 13 & 13 & 14 & 15 & 16 & $m$ & $n$
+\end{tabular}
+
+If both the mean and the median of the above data are 14, which of the following are true?\\
+I. $m \geq 14$\\
+II. $n \leq 16$\\
+III. $m+n=30$",4,2012,30,I and II only,I and III only,II and III only,"I, II and III",,Measure of dispersion and statistics,
+"The H.C.F. and the L.C.M. of three expressions are $a b^2$ and $4 a^4 b^5 c^6$ respectively. If the first expression and the second expression are $2 a^2 b^4 c$ and $4 a^4 b^2 c^6$ respectively, then the third expression is",2,2012,31,$a b^2$,$a b^5$,$2 a b^2 c$,$2 a b^5 c$,,Simplification and factorization,
+"The graph in the figure shows the linear relation between $x$ and $\log _3 y$. If $y=m n^x$, then $n=$",3,2012,32,$\frac{1}{81}$,$\frac{1}{9}$,9,81,,Logarithm,https://n7vcmwon2g.ucarecd.net/0b25b6bb-e449-4466-b9ea-93abc390d38d/2012_Math_Paper_2_Q32.png
+$A D 0000002012_{16}=$,1,2012,33,$(10) 16^{11}+(13) 16^{10}+8210$,$(10) 16^{12}+(13) 16^{11}+131360$,$(11) 16^{11}+(14) 16^{10}+8210$,$(11) 16^{12}+(14) 16^{11}+131360$,,Logarithm,
+"Let $\mathrm{f}(x)$ be a quadratic function. If the coordinates of the vertex of the graph of $y=\mathrm{f}(x)$ are $(3,-4)$, which of the following must be true?",3,2012,34,The roots of the equation $\mathrm{f}(x)=0$ are integers.,The roots of the equation $\mathrm{f}(x)-3=0$ are rational numbers.,The roots of the equation $\mathrm{f}(x)+4=0$ are real numbers.,The roots of the equation $\mathrm{f}(x)+5=0$ are nonreal numbers.,,Graph of functions,
+$i^3(\beta i-3)=$,1,2012,35,$\beta+3 i$,$\beta-3 i$,$-\beta+3 i$,$-\beta-3 i$,,Imaginary numbers,
+"The figure shows a shaded region (including the boundary). If ( $h, k$ ) is a point lying in the shaded region, which of the following are true?\\
+I. $k \geq 3$\\
+II. $h-k \geq-3$\\
+III. $2 h+k \leq 6$",4,2012,36,I and II only,I and III only,II and III only,"I, II and III",,Inequalities and linear programming,https://n7vcmwon2g.ucarecd.net/a24681ba-08e0-4d51-8ba7-107e15561444/2012_Math_Paper_2_Q36.png
+"Let $a_n$ be the $n$th term of an arithmetic sequence. If $a_{18}=26$ and $a_{23}=61$, which of the following are true?\\
+I. $a_{14}<0$\\
+II. $a_1-a_2<0$\\
+III. $a_1+a_2+a_3+\cdots+a_{27}>0$",1,2012,37,I and II only,I and III only,II and III only,"I, II and III",,Arithmetic sequence and geometric sequence,
+Which of the following may represent the graph of $y=\mathrm{f}(x)$ and the graph of $y=\mathrm{f}(x-2)+1$ on the same rectangular coordinate system?,3,2012,38,https://n7vcmwon2g.ucarecd.net/0303ac54-8dc4-477a-b7fc-3cf0c24fbfa4/2012_Math_Paper_2_Q38_Opt_1.png,https://n7vcmwon2g.ucarecd.net/2e95da6c-df10-4c7d-bdb6-034759018ddd/2012_Math_Paper_2_Q38_Opt_2.png,https://n7vcmwon2g.ucarecd.net/6614c7fa-f5bc-48c6-b3c1-03f7f30a1562/2012_Math_Paper_2_Q38_Opt_3.png,https://n7vcmwon2g.ucarecd.net/022521aa-b235-48e5-9b6f-ec1f392161a9/2012_Math_Paper_2_Q38_Opt_4.png,,Graph of functions,
+The figure shows,4,2012,39,the graph of $y=1+3 \cos \frac{x^{\circ}}{2}$,the graph of $y=1+3 \cos 2 x^{\circ}$,the graph of $y=4+3 \cos \frac{x^{\circ}}{2}$,the graph of $y=4+3 \cos 2 x^{\circ}$,,Trigonometry,https://n7vcmwon2g.ucarecd.net/2ae2016f-e370-4799-a903-6f228c06f2a8/2012_Math_Paper_2_Q39.png
+The figure shows a regular tetrahedron $A B C D$. Find the angle between the plane $A B C$ and the plane $B C D$ correct to the nearest degree.,4,2012,40,$48^{\circ}$,$53^{\circ}$,$60^{\circ}$,$71^{\circ}$,,3D geometry,https://n7vcmwon2g.ucarecd.net/ecf0036c-7baf-461c-8158-2024851ca05c/2012_Math_Paper_2_Q40.png
+"In the figure, $P Q$ is the tangent to the circle $A B C$ at $O$, where $O$ is the centre of the semicircle $P B Q$. It is given that $B C P$ is a straight line. If $\angle B P Q=12^{\circ}$, then $\angle B A C=$",3,2012,41,$18^{\circ}$,$24^{\circ}$,$36^{\circ}$,$54^{\circ}$,,Properties of circles,https://n7vcmwon2g.ucarecd.net/931e97eb-e935-4037-a01c-3607a5d691c8/2012_Math_Paper_2_Q41.png
+Find the range of values of $k$ such that the circle $x^2+y^2+2 x-4 y-13=0$ and the straight line $x-y+k=0$ intersect at two distinct points.,2,2012,42,$-9<k<3$,$-3<k<9$,$k<-9$ or $k>3$,$k<-3$ or $k>9$,,Equation of circles,
+"A drama club is formed by 12 boys and 8 girls. If a team of 5 students is selected from the club to participate in a competition and the team consists of at least one girl, how many different teams can be formed?",2,2012,43,3960,14712,15448,15504,,"Permutation, combinations and probability",
+"A box contains six balls numbered $7,8,8,9,9$ and 9 respectively. John repeats drawing one ball at a time randomly from the box without replacement until the number drawn is 9 . Find the probability that he needs exactly three draws.",4,2012,44,$\frac{1}{2}$,$\frac{1}{6}$,$\frac{1}{8}$,$\frac{3}{20}$,,"Permutation, combinations and probability",
+"Let $m_{\mathrm{I}}, r_1$ and $v_1$ be the mean, the range and the variance of a group of numbers $\left\{x_1, x_2, x_3, \ldots, x_{100}\right\}$ respectively. If $m_2, r_2$ and $v_2$ are the mean, the range and the variance of the group of numbers $\left\{x_1, x_2, x_3, \ldots, x_{100}, m_1\right\}$ respectively, which of the following must be true?\\
+I. $m_1=m_2$\\
+II. $r_1=r_2$\\
+III. $v_1=v_2$",1,2012,45,I and II only,I and III only,II and III only,"I, II and III",,Measure of dispersion and statistics,
 $\left(27 \cdot 9^{n+1}\right)^3=$,2,2013,1,$3^{6 n+12}$,$3^{6 n+15}$,$3^{9 n+12}$,$3^{9 n+18}$,Simplification and factorization,,
 "If $\frac{y-1}{c}=\frac{y+1}{d}$, then $y=$",4,2013,2,$\frac{c-d}{c+d}$,$\frac{d-c}{c+d}$,$\frac{c+d}{c-d}$,$\frac{c+d}{d-c}$,Simplification and factorization,,
 $h \ell-k \ell+h m-k m-h n+k n=$,4,2013,3,$(h+k)(\ell-m+n)$,$(h+k)(\ell+m-n)$,$(h-k)(\ell-m+n)$,$(h-k)(\ell+m-n)$,Simplification and factorization,,
@@ -26,6 +105,65 @@ III. $a<b$",4,2013,14,I and II only,I and III only,II and III only,"I, II and II
 "In the figure, $A B C D$ is a trapezium with $A D / / B C$ and $A D: B C=2: 3$. Let $E$ be the mid-point of $B C$. $A C$ and $D E$ intersect at $F$. If the area of $\triangle C E F$ is $36 \mathrm{~cm}^2$, then the area of the trapezium $A B C D$ is",3,2013,18,$216 \mathrm{~cm}^2$,$264 \mathrm{~cm}^2$,$280 \mathrm{~cm}^2$,$320 \mathrm{~cm}^2$,Quadrilaterals,"Parallel lines, similar triangles and congruent triangles",https://n7vcmwon2g.ucarecd.net/8e964bc6-81f2-45d5-bf47-0f23ba876947/2013_Math_Paper_2_Q18.png
 "In the figure, $A B C D$ is a circle. $A C$ and $B D$ intersect at $E$. If $A B=A D$ and $A D / / B C$, then $\angle B A E=$",3,2013,19,$53^{\circ}$,$57^{\circ}$,$69^{\circ}$,$74^{\circ}$,Properties of circles,"Parallel lines, similar triangles and congruent triangles",https://n7vcmwon2g.ucarecd.net/920ae897-0425-47ec-84f9-6f59037ddeb3/2013_Math_Paper_2_Q19.png
 "In the figure, the bearing of $P$ from $O$ is $S 86^{\circ} \mathrm{E}$ and the bearing of $Q$ from $O$ is $\mathrm{N} 32^{\circ} \mathrm{E}$. If $P$ and $Q$ are equidistant from $O$, then the bearing of $P$ from $Q$ is",4,2013,20,$\mathrm{N} 24^{\circ} \mathrm{W}$,$\mathrm{N} 27^{\circ} \mathrm{W}$,$\mathrm{S} 24^{\circ} \mathrm{E}$,$\mathrm{S} 27^{\circ} \mathrm{E}$,"Parallel lines, similar triangles and congruent triangles",,https://n7vcmwon2g.ucarecd.net/ca49f550-50f5-4e3c-ab33-0b5fc5667dc5/2013_Math_Paper_2_Q20.png
+"If an interior angle of a regular $n$-sided polygon is 4 times an exterior angle of the polygon, which of the following is/are true?\\
+I. The value of $n$ is 10.\\
+II. The number of diagonals of the polygon is 10.\\
+III. The number of folds of rotational symmetry of the polygon is 10.",3,2013,21,I only,II only,I and III only,II and III only,Transformation,,
+"In $\triangle A B C, A B: B C: A C=8: 15: 17$. Find $\cos A: \cos C$.",1,2013,22,$8: 15$,$8: 17$,$15: 8$,$15: 17$,Trigonometry,,
+"If $0^{\circ}<x<90^{\circ}$, which of the following must be true?\\
+I. $\quad \tan x \tan \left(90^{\circ}-x\right)=1$\\
+II. $\sin x-\sin \left(90^{\circ}-x\right)<0$\\
+III. $\cos x+\cos \left(90^{\circ}-x\right)>0$",2,2013,23,I and II only,I and III only,II and III only,"I, II and III",Trigonometry,,
+"The coordinates of the points $A$ and $B$ are $(2,5)$ and $(4,-1)$ respectively. Let $P$ be a moving point in the rectangular coordinate plane such that $A P=B P$. Find the equation of the locus of $P$.",1,2013,24,$x-3 y+3=0$,$x-3 y-7=0$,$x-3 y+13=0$,$3 x+y-11=0$,Equation of straight lines,,
+"The equation of the circle $C$ is $2 x^2+2 y^2-4 x+8 y-5=0$. The coordinates of the points $P$ and $Q$ are $(-1,2)$ and $(4,0)$ respectively. Which of the following is/are true?\\
+I. The radius of $C$ is 5.\\
+II. The mid-point of $P Q$ lies outside $C$.\\
+III. If $G$ is the centre of $C$, then $\angle P G Q$ is an acute angle.",4,2013,25,I only,II only,I and III only,II and III only,Equation of circles,"Sine formula, Cosine formula and Heron's formula",
+"Two numbers are randomly drawn at the same time from seven cards numbered 1 ,2, 3, 4, 5, 6 and 7 respectively. Find the probability that the product of the numbers drawn is an odd number.",1,2013,26,$\frac{2}{7}$,$\frac{4}{7}$,$\frac{12}{49}$,$\frac{16}{49}$,"Permutation, combinations and probability",,
+"If the mean and the mode of the nine numbers $14,6,4,5,7,5, x, y$ and $z$ are 8 and 14 respectively, then the median of these nine numbers is",1,2013,27,5,6,7,8,Measure of dispersion and statistics,,
+The scatter diagram below shows the relation between $x$ and $y$. Which of the following may represent the relation between $x$ and $y$?,1,2013,28,$y$ increases when $x$ increases.,$y$ decreases when $x$ increases.,$y$ varies inversely as $x^2$.,$y$ varies directly as $x^{-3}$.,Variations,,https://n7vcmwon2g.ucarecd.net/acaa928e-5ce8-4bfe-8d5b-a6c7ba4397e1/2013_Math_Paper_2_Q28.png
+"The stem-and-leaf diagram below shows the distribution of the hourly wages (in dollars) of some workers.
+
+\begin{tabular}{r|llllllll} 
+Stem (tens) & \multicolumn{7}{|l}{ Leaf (units) } \\
+\hline 4 & 0 & 2 & 2 & 2 & 4 & 4 & 4 & 7 \\
+5 & 0 & 0 & 1 & 2 & 2 & 6 & 8 & 9 \\
+6 & 3 & 5 & 5 & 7 & & & & \\
+7 & 0 & & & & & & & \\
+8 & 2 & 6 & & & & & & \\
+9 & 5 & & & & & & &
+\end{tabular}",1,2013,29,https://n7vcmwon2g.ucarecd.net/dffedf09-02ba-414d-92a0-5f24b732f143/2013_Math_Paper_2_Q29_Opt_1.png,https://n7vcmwon2g.ucarecd.net/8880214c-2ade-4a38-a5c9-a906122f6eb5/2013_Math_Paper_2_Q29_Opt_2.png,https://n7vcmwon2g.ucarecd.net/2914c8d8-b06b-4d79-abfd-df0450986b9c/2013_Math_Paper_2_Q29_Opt_3.png,https://n7vcmwon2g.ucarecd.net/7eeb391e-b70c-4a4d-8573-770bbe0a26d8/2013_Math_Paper_2_Q29_Opt_4.png,Measure of dispersion and statistics,,
+The pie charts below show the distributions of the profits of stationery shop $X$ and stationery shop $Y$ from the sales of stationery in a certain month. Which of the following must be true?,2,2013,30,"In that month, the profit from the sales of pencils of stationery shop $X$ is the same as that of stationery shop $Y$.","In that month, the total profit from the sales of pens and notebooks of stationery shop $X$ is less than the total profit from the sales of rulers and pencils of the shop.",$k=14$,$\theta=36^{\circ}$,Percentage and compound interest,,https://n7vcmwon2g.ucarecd.net/0759760a-fb0f-4196-bedf-aabb045f6ff8/2013_Math_Paper_2_Q30.png
+"The L.C.M. of $a^2+4 a+4, a^2-4$ and $a^3+8$ is",2,2013,31,$a+2$,$(a-2)(a+2)^2\left(a^2-2 a+4\right)$,$(a-2)(a+2)^2\left(a^2+2 a+4\right)$,$(a-2)(a+2)^4\left(a^2-2 a+4\right)$,Simplification and factorization,,
+"The figure above shows the graph of $y=a b^x$, where $a$ and $b$ are constants. Which of the following graphs may represent the relation between $x$ and $\log _7 y$ ?",2,2013,32,https://n7vcmwon2g.ucarecd.net/06ce83ea-30f0-47d8-ae40-03d5db7eac24/2013_Math_Paper_2_Q32_Opt_1.png,https://n7vcmwon2g.ucarecd.net/922dc5fe-7c8e-42ac-8bfb-da3256f5250c/2013_Math_Paper_2_Q32_Opt_2.png,https://n7vcmwon2g.ucarecd.net/d7bd8f60-acfb-4816-83ea-19c10d489bd0/2013_Math_Paper_2_Q32_Opt_3.png,https://n7vcmwon2g.ucarecd.net/47e5c9b9-7687-4faa-bae3-2d2421934b26/2013_Math_Paper_2_Q32_Opt_4.png,Logarithm,,https://n7vcmwon2g.ucarecd.net/e1d808cb-f74d-45e5-8373-18c956fd2db4/2013_Math_Paper_2_Q32.png
+$\mathrm{A} 00000 \mathrm{E}_{00011} 1_{16}=$,1,2013,33,$10 \times 16^{11}+14 \times 16^5+17$,$11 \times 16^{11}+15 \times 16^5+17$,$10 \times 16^{12}+14 \times 16^6+272$,$11 \times 16^{12}+15 \times 16^6+272$,Logarithm,,
+"If $x-\log y=x^2-\log y^2-10=2$, then $y=$",4,2013,34,100,2 or -4,$\frac{1}{100}$ or 10000,$\frac{1}{10000}$ or 100,Logarithm,,
+"If $\alpha \neq \beta$ and $\left\{\begin{array}{l}3 \alpha=\alpha^2-5 \\ 3 \beta=\beta^2-5\end{array}\right.$, then $\alpha \beta=$",4,2013,35,3,-3,5,-5,Quadratic equation,,
+The real part of $i+2 i^2+3 i^3+4 i^4$ is,1,2013,36,2,-2,6,-6,Imaginary numbers,,
+"Consider the following system of inequalities:
+$$
+\left\{\begin{array}{l}
+x \geq 2 \\
+y \geq 0 \\
+x+4 y \leq 22 \\
+4 x-y \leq 20
+\end{array}\right.
+$$
+Let $D$ be the region which represents the solution of the above system of inequalities. If $(x, y)$ is a point lying in $D$, then the greatest value of $3 y-4 x+15$ is",3,2013,37,3,17,22,30,Inequalities and linear programming,,
+"The $n$-th term of a sequence is $2 n-19$. Which of the following is/are true?\\
+I. 25 is a term of the sequence.\\
+II. The sequence has 10 negative terms.\\
+III. The sum of the first $n$ terms of the sequence is $n^2-18 n$.",3,2013,38,I only,II only,I and III only,II and III only,Arithmetic sequence and geometric sequence,,
+"Let $h$ and $k$ be constants. The figure shows the graph of $y=h+k \tan 2 x^{\circ}$, where $0 \leq x \leq \alpha$. Which of the following are true?\\
+I. $h>0$\\
+II. $k<0$\\
+III. $\tan \alpha^{\circ}=\frac{1}{k}$",1,2013,39,I and II only,I and III only,II and III only,"I, II and III",Trigonometry,,https://n7vcmwon2g.ucarecd.net/888bfc26-cfa2-4a70-8400-522d21175533/2013_Math_Paper_2_Q39.png
+"If the height of a regular tetrahedron is 2 cm, then the volume of the tetrahedron is",2,2013,40,$2 \mathrm{~cm}^3$,$\sqrt{3} \mathrm{~cm}^3$,$\sqrt{6} \mathrm{~cm}^3$,$3 \sqrt{3} \mathrm{~cm}^3$,"Perimeter, area and volume",,
+"In the figure, $O$ is the centre of the circle $A B C$. $D E$ is the tangent to the circle at $A$. If $A B$ is the angle bisector of $\angle C A E$, then $\angle A C O=$",4,2013,41,$26^{\circ}$,$28^{\circ}$,$31^{\circ}$,$34^{\circ}$,Properties of circles,,https://n7vcmwon2g.ucarecd.net/7052d525-f344-4948-bbab-ac078456cf69/2013_Math_Paper_2_Q41.png
+Find the range of values of $k$ such that the circle $x^2+y^2+2 x-2 y-7=0$ and the straight line $3 x-4 y+k=0$ intersect.,2,2013,42,$-8<k<22$,$-8 \leq k \leq 22$,$k<-22$ or $k>8$,$k \leq-22$ or $k \geq 8$,Inequalities and linear programming,,
+"Let $O$ be the origin. If the coordinates of the points $A$ and $B$ are $(0,12)$ and $(30,12)$ respectively, then the $y$-coordinate of the circumcentre of $\triangle O A B$ is",1,2013,43,6,8,12,15,Properties of circles,,
+"If the first three digits and the last five digits of an eight-digit phone number are formed by a permutation of $5,6,9$ and a permutation of $2,3,4,7,8$ respectively, how many different eight-digit phone numbers can be formed?",3,2013,44,15,126,720,40320,"Permutation, combinations and probability",,
+"If the variance of the five numbers $x_1, x_2, x_3, x_4$ and $x_5$ is 13, then the variance of the five numbers $3 x_1+4,3 x_2+4,3 x_3+4,3 x_4+4$ and $3 x_5+4$ is",3,2013,45,39,43,117,121,Measure of dispersion and statistics,,
 "If \(\frac{a+5b}{7a+2b}=\frac{1}{b+3}\), then a=",3,2023,1,\(\frac{4-b}{5b^{2}+13b}\),\(\frac{4+b}{5b^{2}+13b}\),\(\frac{5b^{2}+13b}{4-b}\),\(\frac{5b^{2}+13b}{4+b}\),Simplification and factorization,,
 \(\frac{2}{5-4x}-\frac{1}{5+4x}=\),3,2023,2,\frac{5 + 4x}{25 - 16x^2},\frac{5 - 4x}{25 - 16x^2},\frac{5 + 12x}{25 - 16x^2},\frac{5 - 12x}{25 - 16x^2},Simplification and factorization,,
 \(4^{n+2}3^{2n+4}=\),1,2023,3,6^{2n+4},6^{4n+8},12^{2n+4},12^{3n+6},Simplification and factorization,,
@@ -50,14 +188,14 @@ The marked price of a certain coat is 60% higher than its cost. The coat is sold
 \text{II. } c+d=180^{\circ}
 
 \text{III. } a+b+c=d",1,2023,18,I AND II ,I AND III,II AND III,"I, II AND III","Parallel lines, similar triangles and congruent triangles",Quadrilaterals,https://n7vcmwon2g.ucarecd.net/dd40f6c5-36fa-44b0-a67b-2b437f6a5679/2023_Math_Paper_2_Q18.png
-"Given that ABCD is a rhombus. Let E be the intersection of AC and BD. Which of the following must be correct? I. \(AE=BE\) II. \(\frac{AE}{AC}=\frac{BE}{BD}\) III. \(AE^{2}+BE^{2}=CD^{2}\)",3,2023,19,I AND II ,I AND III,II AND III,"I, II AND III",Quadrilaterals,"Parallel lines, similar triangles and congruent triangles",https://n7vcmwon2g.ucarecd.net/9d26f127-d6a5-4555-bc7f-45ec134b59d1/2023_Math_Paper_2_Q19.png
+Given that ABCD is a rhombus. Let E be the intersection of AC and BD. Which of the following must be correct? I. \(AE=BE\) II. \(\frac{AE}{AC}=\frac{BE}{BD}\) III. \(AE^{2}+BE^{2}=CD^{2}\),3,2023,19,I AND II ,I AND III,II AND III,"I, II AND III",Quadrilaterals,"Parallel lines, similar triangles and congruent triangles",https://n7vcmwon2g.ucarecd.net/9d26f127-d6a5-4555-bc7f-45ec134b59d1/2023_Math_Paper_2_Q19.png
 "The figure shows regular quadrilateral ABCD, regular pentagon ADEFG and AHJIJK. Find \angle ABK.",1,2023,20,69^{\circ},72^{\circ},74^{\circ},75^{\circ},"Perimeter, area and volume",Variations,https://n7vcmwon2g.ucarecd.net/59b79d6c-021c-4848-a87f-a0267eb1a4b5/2023_Math_Paper_2_Q20.png
 "\text{In the figure, } PQRS \text{ is a rectangle. Let } T \text{ be a point on } QR \text{ such that } \angle PTS=90^{\circ}. \text{ The extension of } PQ \text{ and the extension of } ST \text{ intersect at point } U. \text{ Extend } PT \text{ to point } V \text{ such that } RT=RV. \text{ Which of the following must be correct?}",3,2023,21,RV \parallel ST,\angle PTQ = \angle RTS,\triangle PST \sim \triangle UTQ,\triangle PQT \cong \triangle TRS,Quadrilaterals,"Parallel lines, similar triangles and congruent triangles",https://n7vcmwon2g.ucarecd.net/3daf1253-950f-470a-969b-241b368eb5cc/2023_Math_Paper_2_Q21.png
 "In the figure, RSTU is a cyclic quadrilateral, where ST = TU. The extension of RS and the extension of UT intersect at point V, while the extension of RU and the extension of ST intersect at point W. If \angle RWS = 32^{\circ} and \angle RVU = 48^{\circ}, then \angle RSU =",2,2023,22,65^{\circ},73^{\circ},80^{\circ},82^{\circ},Properties of circles,Trigonometry,https://n7vcmwon2g.ucarecd.net/21ad009a-6a6a-4777-9c25-d7a3f906b856/2023_Math_Paper_2_Q22.png
 "In the figure, ABCD is a trapezium with AD parallel to BC. Let E be the midpoint of AD. Given that \(\angle ABE=\angle BCE=90^{\circ }\). Find \(\frac{CE}{DE}\).",4,2023,23,\frac{1}{2},1,tan\alpha,sin \alpha cos \alpha,Quadrilaterals,Trigonometry,https://n7vcmwon2g.ucarecd.net/a2695822-f698-49a3-9722-08a6b6952190/2023_Math_Paper_2_Q23.png
 "The Cartesian coordinates of point P are \((\sqrt{2},-\sqrt{2})\). If P is rotated \(90^{\circ }\) anticlockwise about the origin, then the polar coordinates of its image are",3,2023,24,"(\sqrt{2}, 45^{\circ})","(\sqrt{2}, 225^{\circ})","(2, 45^{\circ})","(2, 225^{\circ})",Transformation,Trigonometry,
 Find the constant \(a\) such that the straight line \(2x+(a+3)y-5=0\) is perpendicular to the straight line \(ax-4y+1=0\).,1,2023,25,-6,-5,-2,4,Equation of straight lines,,
-"The equations of the straight lines \(l\) and \(L\) are \(9x+12y-37=0\) and \(12x+16y+85=0\) respectively. \(l\) intersects the \(x\)-axis at point \(A\) and \(L\) intersects the \(y\)-axis at point \(B\). Let \(P\) be a moving point on the Cartesian plane such that the perpendicular distance from \(P\) to \(l\) is equal to the perpendicular distance from \(P\) to \(L\). Let the locus of \(P\) be denoted by \(\Gamma\). Which of the following is/are correct? I. \(\Gamma\) is parallel to \(L\). II. \(\Gamma\) is perpendicular to \(AB\). III. \(\Gamma\) passes through the midpoint of \(AB\).",2,2023,26,I AND II ,I AND III,II AND III,"I, II AND III",Equation of straight lines,Pythagoras Theorem,
+The equations of the straight lines \(l\) and \(L\) are \(9x+12y-37=0\) and \(12x+16y+85=0\) respectively. \(l\) intersects the \(x\)-axis at point \(A\) and \(L\) intersects the \(y\)-axis at point \(B\). Let \(P\) be a moving point on the Cartesian plane such that the perpendicular distance from \(P\) to \(l\) is equal to the perpendicular distance from \(P\) to \(L\). Let the locus of \(P\) be denoted by \(\Gamma\). Which of the following is/are correct? I. \(\Gamma\) is parallel to \(L\). II. \(\Gamma\) is perpendicular to \(AB\). III. \(\Gamma\) passes through the midpoint of \(AB\).,2,2023,26,I AND II ,I AND III,II AND III,"I, II AND III",Equation of straight lines,Pythagoras Theorem,
 "The equations of circle C\textsubscript{1} and circle C\textsubscript{2} are $x^2+y^2+7x-4y+15=0$ and $2x^2+2y^2-2x-16y-17=0$ respectively.
 Let $G_1$ and $G_2$ be the centers of $C_1$ and $C_2$ respectively. Let $O$ be the origin. Which of the following is correct?
 
