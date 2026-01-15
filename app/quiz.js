@@ -195,26 +195,39 @@ export default function QuizScreen() {
         </View>
 
         <View style={styles.optionsContainer}>
-          {options.map((option, index) => (
-            <Pressable
-              key={index}
-              style={({ pressed }) => [
-                styles.option,
-                selectedAnswers[currentQuestion] === index && styles.selectedOption,
-                pressed && styles.pressedStyle,
-                Platform.OS === 'android' && styles.androidFix,
-              ]}
-              onPress={() => handleSelect(index)}
-            >
-              <MathText
-                text={option}
-                style={[
-                  styles.optionText,
-                  selectedAnswers[currentQuestion] === index && styles.selectedOptionText
+          {options.map((option, index) => {
+            const isImage = option && typeof option === 'string' && option.startsWith('https://');
+            
+            return (
+              <Pressable
+                key={index}
+                style={({ pressed }) => [
+                  styles.option,
+                  isImage && styles.imageOption,
+                  selectedAnswers[currentQuestion] === index && styles.selectedOption,
+                  pressed && styles.pressedStyle,
+                  Platform.OS === 'android' && styles.androidFix,
                 ]}
-              />
-            </Pressable>
-          ))}
+                onPress={() => handleSelect(index)}
+              >
+                {isImage ? (
+                  <Image
+                    source={{ uri: option }}
+                    style={styles.optionImage}
+                    resizeMode="contain"
+                  />
+                ) : (
+                  <MathText
+                    text={option}
+                    style={[
+                      styles.optionText,
+                      selectedAnswers[currentQuestion] === index && styles.selectedOptionText
+                    ]}
+                  />
+                )}
+              </Pressable>
+            );
+          })}
         </View>
 
         {currentQuestion === quizQuestions.length - 1 && !allQuestionsAnswered() && (
@@ -336,6 +349,18 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'stretch',
     overflow: 'visible',
+  },
+  imageOption: {
+    minHeight: 'auto',
+    padding: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  optionImage: {
+    width: '100%',
+    height: undefined,
+    aspectRatio: 1,
+    borderRadius: 8,
   },
   selectedOption: {
     backgroundColor: '#4A5859',
